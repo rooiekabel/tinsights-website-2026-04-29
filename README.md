@@ -2,6 +2,12 @@
 
 Productie-website gebouwd met Next.js 14.
 
+## Public Demo
+
+- Live demo: https://tinsights.nl
+- Type website: snelle, conversiegerichte bedrijfswebsite met portfolio/projectenpagina, contactflow en juridische pagina's.
+- Doel: bezoekers omzetten naar leads via duidelijke CTA's, performance-first frontend en moderne visual stijl.
+
 ## Vereisten
 
 - Node.js 20+
