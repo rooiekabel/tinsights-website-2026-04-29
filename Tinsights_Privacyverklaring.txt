@@ -1,0 +1,64 @@
+PRIVACYVERKLARING – TINSIGHTS
+Versie: 12-02-2026
+
+1. Wie zijn wij?
+Tinsights, [RECHTSVORM INVULLEN], gevestigd te [PLAATS], kantoorhoudende aan [ADRES], KvK [KVK], BTW [BTW].
+Contact: info@tinsights.nl | 085-369-6652 | www.tinsights.nl
+
+2. Voor wie geldt deze verklaring?
+Deze privacyverklaring geldt voor bezoekers van onze website, (potentiële) klanten, leveranciers en contactpersonen.
+
+3. Welke persoonsgegevens verwerken wij?
+Afhankelijk van je gebruik verwerken wij (mogelijk) de volgende gegevens:
+- Contactgegevens: naam, e-mailadres, telefoonnummer, bedrijfsnaam
+- Communicatie: berichten via e-mail/contactformulier
+- Administratie: factuurgegevens, adres, KvK/BTW (zakelijk), betalingsgegevens
+- Websitegebruik: IP-adres, browser/OS, apparaat- en loggegevens
+- Hosting/onderhoud: technische logs, gebruikersaccounts, IP’s, en (door jou geplaatste) content op je website
+
+4. Waarom verwerken wij persoonsgegevens?
+Wij verwerken persoonsgegevens voor:
+- Contact en offerteafhandeling
+- Uitvoering van overeenkomsten (bouw, hosting, onderhoud, support)
+- Facturatie en boekhouding
+- Beveiliging en het voorkomen van misbruik
+- Verbetering van onze website/diensten (analytics indien gebruikt)
+- Naleving van wettelijke verplichtingen
+
+5. Rechtsgrond (AVG)
+Wij verwerken gegevens op basis van:
+- Uitvoering overeenkomst
+- Gerechtvaardigd belang (beveiliging/bedrijfsvoering)
+- Toestemming (bijv. niet-noodzakelijke cookies/marketing indien toegepast)
+- Wettelijke verplichting (fiscale bewaarplicht)
+
+6. Met wie delen wij gegevens?
+Wij delen gegevens alleen als dat noodzakelijk is, bijvoorbeeld met:
+- Hosting/datacenter/registrar (domein/hosting)
+- E-maildienst (bijv. Mailgun) voor het versturen van e-mails
+- Banken/betaalproviders
+- Boekhouder/administratiesoftware
+Met verwerkers maken wij waar nodig afspraken.
+
+7. Doorgifte buiten de EU
+Sommige leveranciers kunnen (deels) buiten de EU verwerken. Waar relevant gebruiken wij passende waarborgen of kiezen we EU-diensten waar mogelijk.
+
+8. Bewaartermijnen
+- Offertes/contact: maximaal 2 jaar (tenzij klantrelatie ontstaat)
+- Administratie/facturen: 7 jaar (fiscale bewaarplicht)
+- Logs/beveiligingsdata: meestal 3–12 maanden (afhankelijk van doel en type)
+
+9. Beveiliging
+Wij nemen passende maatregelen, zoals SSL/TLS, toegangsbeheer, updates/patching waar mogelijk, logging en monitoring. 100% beveiliging bestaat niet; wij leveren een inspanningsverplichting.
+
+10. Cookies
+Wij gebruiken mogelijk cookies voor functionele werking en analytics. Voor niet-noodzakelijke cookies vragen wij toestemming. Overweeg een apart cookiebeleid/cookiebanner als je analytics/marketing gebruikt.
+
+11. Jouw rechten
+Je hebt o.a. recht op inzage, correctie, verwijdering, beperking, bezwaar en dataportabiliteit. Je kunt een verzoek indienen via info@tinsights.nl. We kunnen om identificatie vragen.
+
+12. Klachten
+Je kunt een klacht indienen bij de Autoriteit Persoonsgegevens.
+
+13. Vragen?
+Mail naar info@tinsights.nl

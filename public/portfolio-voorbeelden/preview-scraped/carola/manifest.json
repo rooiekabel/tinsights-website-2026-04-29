@@ -1,0 +1,250 @@
+[
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/background/footer-bg.jpg",
+    "local_file": "carola/footer-bg-94abd0439f9c.jpg",
+    "file_size": 160362,
+    "hash": "94abd0439f9c",
+    "width": 1920,
+    "height": 535
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/background/vedio-bg.jpg",
+    "local_file": "carola/vedio-bg-4e31f1b3d0ca.jpg",
+    "file_size": 699198,
+    "hash": "4e31f1b3d0ca",
+    "width": 1290,
+    "height": 500
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/blog/blog-image-01.jpg",
+    "local_file": "carola/blog-image-01-1af8c6f40e16.jpg",
+    "file_size": 116081,
+    "hash": "1af8c6f40e16",
+    "width": 410,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/blog/blog-image-02.jpg",
+    "local_file": "carola/blog-image-02-ce4f3eea747c.jpg",
+    "file_size": 139846,
+    "hash": "ce4f3eea747c",
+    "width": 410,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/blog/blog-image-03.jpg",
+    "local_file": "carola/blog-image-03-cca6a9d6dd5d.jpg",
+    "file_size": 94608,
+    "hash": "cca6a9d6dd5d",
+    "width": 410,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/brands/porsche.png",
+    "local_file": "carola/porsche-c6108cfe639b.png",
+    "file_size": 7205,
+    "hash": "c6108cfe639b",
+    "width": 68,
+    "height": 60
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/brands/volkswagen.png",
+    "local_file": "carola/volkswagen-6267de7d098c.png",
+    "file_size": 7564,
+    "hash": "6267de7d098c",
+    "width": 60,
+    "height": 60
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/car-type/hatchback.png",
+    "local_file": "carola/hatchback-f5d1c67844eb.png",
+    "file_size": 9969,
+    "hash": "f5d1c67844eb",
+    "width": 136,
+    "height": 50
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/car-type/luxury-sedan.png",
+    "local_file": "carola/luxury-sedan-9f74e7807169.png",
+    "file_size": 7830,
+    "hash": "9f74e7807169",
+    "width": 142,
+    "height": 46
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/car-type/sedan.png",
+    "local_file": "carola/sedan-b64da5d4e013.png",
+    "file_size": 10834,
+    "hash": "b64da5d4e013",
+    "width": 141,
+    "height": 54
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/car-type/sports-car.png",
+    "local_file": "carola/sports-car-786d717b795a.png",
+    "file_size": 9097,
+    "hash": "786d717b795a",
+    "width": 150,
+    "height": 47
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/car-type/suv.png",
+    "local_file": "carola/suv-d27cd8b1ef0b.png",
+    "file_size": 11688,
+    "hash": "d27cd8b1ef0b",
+    "width": 140,
+    "height": 55
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/car-type/truck.png",
+    "local_file": "carola/truck-0ac10a8e6bc2.png",
+    "file_size": 9550,
+    "hash": "0ac10a8e6bc2",
+    "width": 139,
+    "height": 48
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/featured-car/featured-car-1.jpg",
+    "local_file": "carola/featured-car-1-ccc66bd3c2e5.jpg",
+    "file_size": 71957,
+    "hash": "ccc66bd3c2e5",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/featured-car/featured-car-2.jpg",
+    "local_file": "carola/featured-car-2-ad7db634ab25.jpg",
+    "file_size": 112941,
+    "hash": "ad7db634ab25",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/featured-car/featured-car-3.jpg",
+    "local_file": "carola/featured-car-3-e1274b7feccd.jpg",
+    "file_size": 139160,
+    "hash": "e1274b7feccd",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/gallery/image-1.jpg",
+    "local_file": "carola/image-1-3072b74ece66.jpg",
+    "file_size": 155001,
+    "hash": "3072b74ece66",
+    "width": 400,
+    "height": 500
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/gallery/image-2.jpg",
+    "local_file": "carola/image-2-27e4b1b2b9d8.jpg",
+    "file_size": 129922,
+    "hash": "27e4b1b2b9d8",
+    "width": 400,
+    "height": 500
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/gallery/image-3.jpg",
+    "local_file": "carola/image-3-561b1fa83bdf.jpg",
+    "file_size": 130574,
+    "hash": "561b1fa83bdf",
+    "width": 400,
+    "height": 500
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/gallery/image-4.jpg",
+    "local_file": "carola/image-4-78ff9aa85c59.jpg",
+    "file_size": 164265,
+    "hash": "78ff9aa85c59",
+    "width": 400,
+    "height": 500
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/gallery/image-5.jpg",
+    "local_file": "carola/image-5-6d12d8a9be0a.jpg",
+    "file_size": 147741,
+    "hash": "6d12d8a9be0a",
+    "width": 400,
+    "height": 500
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/popular-car/popular-car-1.jpg",
+    "local_file": "carola/popular-car-1-61e8d662677a.jpg",
+    "file_size": 108463,
+    "hash": "61e8d662677a",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/popular-car/popular-car-2.jpg",
+    "local_file": "carola/popular-car-2-3ce90e96933e.jpg",
+    "file_size": 87481,
+    "hash": "3ce90e96933e",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/popular-car/popular-car-3.jpg",
+    "local_file": "carola/popular-car-3-e168b190227c.jpg",
+    "file_size": 141340,
+    "hash": "e168b190227c",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/popular-car/popular-car-4.jpg",
+    "local_file": "carola/popular-car-4-29dc88d50553.jpg",
+    "file_size": 132564,
+    "hash": "29dc88d50553",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/popular-car/popular-car-5.jpg",
+    "local_file": "carola/popular-car-5-ccc66bd3c2e5.jpg",
+    "file_size": 71957,
+    "hash": "ccc66bd3c2e5",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/popular-car/popular-car-6.jpg",
+    "local_file": "carola/popular-car-6-ad7db634ab25.jpg",
+    "file_size": 112941,
+    "hash": "ad7db634ab25",
+    "width": 390,
+    "height": 250
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/sliders/car.png",
+    "local_file": "carola/car-cb510b05c08d.png",
+    "file_size": 267255,
+    "hash": "cb510b05c08d",
+    "width": 796,
+    "height": 454
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/sliders/slider-1.jpg",
+    "local_file": "carola/slider-1-92d3dcd7b0d7.jpg",
+    "file_size": 567702,
+    "hash": "92d3dcd7b0d7",
+    "width": 1920,
+    "height": 678
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/fonts/icomoon.svg?2ifihz#icomoon",
+    "local_file": "carola/icomoon-896249d31560.svg",
+    "file_size": 74493,
+    "hash": "896249d31560",
+    "width": null,
+    "height": null
+  },
+  {
+    "source_url": "https://z.commonsupport.com/html/carola/assets/images/shape/shape-1.png",
+    "local_file": "carola/shape-1-28e9f6398348.png",
+    "file_size": 25171,
+    "hash": "28e9f6398348",
+    "width": 666,
+    "height": 666
+  }
+]

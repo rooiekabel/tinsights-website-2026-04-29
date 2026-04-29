@@ -1,0 +1,133 @@
+ALGEMENE VOORWAARDEN – TINSIGHTS
+Versie: 12-02-2026
+
+1. Gegevens ondernemer
+1.1. Tinsights, handelend als [RECHTSVORM INVULLEN], gevestigd te [PLAATS], kantoorhoudende aan [ADRES], ingeschreven bij de Kamer van Koophandel onder nummer [KVK], BTW-nummer [BTW].
+1.2. Contact: info@tinsights.nl | 085-369-6652 | www.tinsights.nl
+
+2. Definities
+2.1. Tinsights: de opdrachtnemer.
+2.2. Opdrachtgever: de wederpartij van Tinsights, zijnde een consument of zakelijke klant.
+2.3. Consument: natuurlijke persoon die niet handelt in de uitoefening van beroep of bedrijf.
+2.4. Overeenkomst: iedere overeenkomst tussen Tinsights en Opdrachtgever.
+2.5. Diensten: o.a. websiteontwikkeling, webshop/e-commerce, webapps, hosting, onderhoud, support, SEO/marketing, branding/design, domeinregistratie, security audits/ethical hacking.
+2.6. Schriftelijk: per e-mail of schriftelijk op papier.
+2.7. Derden: hostingproviders, registrars, softwareleveranciers, payment providers, SaaS, open source makers en overige partijen waarvan Tinsights (mede) afhankelijk is.
+
+3. Toepasselijkheid
+3.1. Deze voorwaarden zijn van toepassing op alle offertes, aanbiedingen, werkzaamheden, diensten en overeenkomsten van Tinsights.
+3.2. Afwijkingen of aanvullingen gelden alleen indien Schriftelijk overeengekomen.
+3.3. Voorwaarden van Opdrachtgever worden uitdrukkelijk van de hand gewezen.
+3.4. Rangorde bij tegenstrijdigheden: (1) de Overeenkomst/offerte (incl. bijlagen), (2) eventuele SLA, (3) eventuele verwerkersovereenkomst, (4) deze Algemene Voorwaarden.
+
+4. Offertes, aanbod en aanvaarding
+4.1. Offertes zijn vrijblijvend en geldig gedurende 30 dagen, tenzij anders vermeld.
+4.2. Een Overeenkomst komt tot stand zodra Opdrachtgever de offerte/aanbieding Schriftelijk accepteert of zodra Tinsights met instemming van Opdrachtgever start met de uitvoering.
+4.3. Kennelijke fouten/verschrijvingen binden Tinsights niet.
+4.4. Tinsights mag een opdracht weigeren of aanvullende voorwaarden stellen (o.a. vooruitbetaling/zekerheid).
+
+5. Uitvoering en informatieplicht Opdrachtgever
+5.1. Tinsights voert de Diensten uit naar beste inzicht en vermogen (inspanningsverplichting), tenzij uitdrukkelijk Schriftelijk een resultaat is toegezegd.
+5.2. Opdrachtgever verstrekt tijdig alle benodigde informatie, materialen (teksten, afbeeldingen, logo’s, huisstijl, productdata, juridische teksten) en toegang tot systemen.
+5.3. Opdrachtgever is verantwoordelijk voor (i) de juistheid, volledigheid en rechtmatigheid van aangeleverde content, (ii) toestemming/licenties voor gebruik van materiaal, (iii) naleving van wet- en regelgeving op de eigen website (zoals privacy/cookies/consumentenrecht).
+5.4. Vertraging door het niet of niet tijdig aanleveren van informatie of feedback leidt tot uitstel van planning/oplevering en kan meerwerk opleveren.
+
+6. Planning, oplevering en acceptatie
+6.1. Levertermijnen zijn indicatief, tenzij Schriftelijk als fatale termijn is overeengekomen.
+6.2. Oplevering vindt plaats door (i) plaatsing op testomgeving of (ii) livegang, afhankelijk van de afspraak.
+6.3. Opdrachtgever test binnen 14 dagen na oplevermelding en meldt gebreken Schriftelijk en zo concreet mogelijk.
+6.4. Bij uitblijven van reactie binnen 14 dagen geldt het werk als geaccepteerd en opgeleverd.
+6.5. Inbegrepen zijn maximaal 3 feedbackrondes, tenzij anders overeengekomen. Extra rondes/aanpassingen zijn meerwerk.
+6.6. Na acceptatie vallen wijzigingen in scope/ontwerp/inhoud onder meerwerk; Tinsights herstelt alleen reproduceerbare bugs conform artikel 12.
+
+7. Wijzigingen en meerwerk
+7.1. Verzoeken die de afgesproken scope wijzigen (extra pagina’s, functionaliteit, koppelingen, designs) gelden als meerwerk.
+7.2. Meerwerk wordt uitgevoerd na Schriftelijke bevestiging door Opdrachtgever of na feitelijke opdracht/gebruik.
+7.3. Uurtarief meerwerk: €75 per uur (tenzij anders overeengekomen), met afronding op 15 minuten.
+7.4. Tinsights mag (deel)facturen sturen bij fasen, uren of meerwerk.
+
+8. Prijzen en prijswijzigingen
+8.1. Alle prijzen zijn exclusief BTW, tenzij anders vermeld.
+8.2. Kosten van derden (licenties, premium plugins, fonts, stockfoto’s, payment providers, e-mail/SMS, domeinregistratie) worden doorbelast, tenzij anders overeengekomen.
+8.3. Bij abonnementen (hosting/onderhoud) mag Tinsights jaarlijks prijzen indexeren of aanpassen bij stijgende kosten, met aankondiging vooraf.
+
+9. Betaling, aanbetaling, wanbetaling
+9.1. Projecten: 50% aanbetaling bij start en 50% bij oplevering, tenzij anders overeengekomen.
+9.2. Abonnementen (hosting/onderhoud/domein): vooruitbetaling per maand/jaar, tenzij anders overeengekomen.
+9.3. Betaaltermijn: 14 dagen na factuurdatum.
+9.4. Bij niet tijdige betaling is Opdrachtgever van rechtswege in verzuim. Tinsights is gerechtigd wettelijke (handels)rente te rekenen en buitengerechtelijke incassokosten conform de Wet Incassokosten.
+9.5. Tinsights mag werkzaamheden opschorten, toegang beperken, testomgeving offline halen en/of hosting tijdelijk blokkeren bij wanbetaling, zonder aansprakelijkheid voor (gevolg)schade.
+9.6. Eigendomsvoorbehoud: alle resultaten (code, designs, configuraties) blijven eigendom van Tinsights totdat alle openstaande bedragen volledig zijn voldaan.
+9.7. Aanbetaling wordt niet gerestitueerd bij annulering door Opdrachtgever nadat Tinsights met de uitvoering is gestart, tenzij dwingend recht anders bepaalt.
+
+10. Hosting, domeinen en beschikbaarheid (99% van klanten)
+10.1. Hosting betreft een inspanningsverplichting. Tinsights garandeert geen 100% uptime of ononderbroken beschikbaarheid, tenzij Schriftelijk in een SLA is overeengekomen.
+10.2. Tinsights mag onderhoud uitvoeren waardoor tijdelijk downtime ontstaat, bij voorkeur buiten piekuren.
+10.3. Tinsights is niet aansprakelijk voor storingen door derden (datacenters, netwerkproviders, registrars, DNS, e-mail, cloud services) of overmacht.
+10.4. Opdrachtgever is verantwoordelijk voor eigen back-ups, tenzij expliciet een back-updienst is overeengekomen. Bij overeengekomen back-ups geldt: back-ups zijn best effort; herstel is niet gegarandeerd.
+10.5. Domeinen worden in beginsel geregistreerd op naam van Opdrachtgever. Opdrachtgever verstrekt correcte registratiedata en blijft eigenaar/registrant.
+10.6. Bij beëindiging of wanbetaling kan de website offline gaan. Migratie/overdracht vindt pas plaats na volledige betaling van openstaande facturen en redelijke migratiekosten.
+
+11. Security, ethical hacking en audits
+11.1. Security-audits en ethical hacking zijn inspanningsdiensten. Tinsights garandeert niet dat alle kwetsbaarheden worden gevonden of dat systemen “100% veilig” zijn.
+11.2. Tinsights is alleen aansprakelijk voor directe schade door aantoonbare, aan Tinsights toe te rekenen fouten, binnen de aansprakelijkheidslimieten van artikel 14.
+11.3. Opdrachtgever blijft verantwoordelijk voor patchmanagement van eigen systemen en voor het opvolgen van aanbevelingen.
+
+12. Garantie, support en onderhoud
+12.1. Na oplevering verleent Tinsights 3 maanden bugfix-support op reproduceerbare bugs in door Tinsights geleverde maatwerkcode, mits Opdrachtgever niet zelf (of via derden) wijzigingen heeft aangebracht.
+12.2. Niet onder garantie: contentwijzigingen, nieuwe wensen, compatibiliteitsproblemen door updates van derden, CMS/plugin-thema issues van derden, of wijzigingen in browsers/standaarden.
+12.3. Reactietijd: binnen 2 werkdagen; urgent binnen 24 uur indien overeengekomen en mogelijk tegen meerprijs.
+
+13. Intellectuele eigendom en licenties
+13.1. Alle IE-rechten op door Tinsights ontwikkelde resultaten blijven bij Tinsights tot volledige betaling.
+13.2. Na volledige betaling verkrijgt Opdrachtgever een niet-exclusief, niet-overdraagbaar gebruiksrecht voor het doel waarvoor de website/app is gemaakt, tenzij anders overeengekomen.
+13.3. Doorverkoop/sublicentie aan derden is verboden zonder Schriftelijke toestemming, tenzij anders overeengekomen.
+13.4. Open source/derdencomponenten blijven onder hun eigen licenties vallen. Opdrachtgever is verantwoordelijk voor naleving van die licenties na oplevering.
+13.5. Tinsights mag het project in portfolio tonen, tenzij Opdrachtgever Schriftelijk bezwaar maakt vooraf.
+
+14. Aansprakelijkheid (risicobeperking)
+14.1. Tinsights is niet aansprakelijk voor indirecte schade, gevolgschade, gederfde winst, gemiste besparingen, reputatieschade, dataverlies, bedrijfsstagnatie of downtime.
+14.2. De totale aansprakelijkheid van Tinsights is per gebeurtenis of samenhangende gebeurtenissen beperkt tot het door Opdrachtgever betaalde bedrag voor de betreffende opdracht (excl. BTW), met een maximum van €[MAX INVULLEN, bijv. 5.000].
+14.3. De beperkingen vervallen uitsluitend indien sprake is van opzet of bewuste roekeloosheid van de bedrijfsleiding van Tinsights.
+14.4. Voorwaarde voor aansprakelijkheid is dat Opdrachtgever Tinsights Schriftelijk in gebreke stelt met een redelijke hersteltermijn en Tinsights toerekenbaar tekort blijft schieten.
+14.5. Opdrachtgever meldt schade uiterlijk binnen 14 dagen na ontdekking Schriftelijk, bij gebreke waarvan het recht op schadevergoeding vervalt.
+
+15. Vrijwaring Opdrachtgever
+15.1. Opdrachtgever vrijwaart Tinsights voor aanspraken van derden die voortvloeien uit (i) door Opdrachtgever aangeleverde content, (ii) onrechtmatig gebruik van de website, (iii) schending van IE-rechten of privacyregels door Opdrachtgever, (iv) niet-naleving van licenties van derden door Opdrachtgever.
+15.2. Opdrachtgever is verantwoordelijk voor de juridische inhoud van zijn website (privacyverklaring, cookiebeleid, algemene voorwaarden/webshopinformatie), tenzij Tinsights expliciet Schriftelijk juridisch advies levert (wat standaard niet het geval is).
+
+16. Annulering, opschorting en beëindiging
+16.1. Annulering door Opdrachtgever: reeds verrichte werkzaamheden en gemaakte kosten worden gefactureerd. Aanbetaling wordt niet gerestitueerd indien Tinsights is gestart.
+16.2. Tinsights mag de overeenkomst (gedeeltelijk) opschorten of ontbinden bij wanbetaling, misbruik, onredelijke eisen, of als samenwerking redelijkerwijs niet kan worden voortgezet.
+16.3. Abonnementen (hosting/onderhoud): opzegtermijn 1 maand, tenzij anders overeengekomen. Opzegging Schriftelijk per e-mail.
+
+17. Herroepingsrecht (alleen Consumenten)
+17.1. Indien Opdrachtgever Consument is en de Overeenkomst op afstand is gesloten, heeft Opdrachtgever in beginsel 14 dagen bedenktijd. (Let op: ontbrekende info kan leiden tot verlenging van de bedenktijd.) 
+17.2. Voor diensten: als de Consument uitdrukkelijk verzoekt dat Tinsights binnen de bedenktijd start, dan kan Tinsights bij herroeping een redelijke vergoeding rekenen voor reeds uitgevoerde werkzaamheden.
+17.3. Voor digitale inhoud die niet op een materiële drager wordt geleverd kan het herroepingsrecht vervallen indien de Consument uitdrukkelijk instemt met directe levering en verklaart afstand te doen van het herroepingsrecht. 
+17.4. Zakelijke Opdrachtgevers (B2B) hebben geen wettelijk herroepingsrecht.
+
+18. Persoonsgegevens en verwerkersovereenkomst
+18.1. Wanneer Tinsights in opdracht persoonsgegevens verwerkt (bijv. hosting/onderhoud), sluiten partijen een verwerkersovereenkomst.
+18.2. Opdrachtgever is (meestal) verwerkingsverantwoordelijke; Tinsights is verwerker.
+18.3. Opdrachtgever staat in voor rechtmatige verwerking en verstrekt benodigde informatie aan betrokkenen.
+
+19. Geheimhouding
+19.1. Partijen behandelen vertrouwelijke informatie vertrouwelijk en leggen dit ook op aan ingeschakelde derden.
+19.2. Geheimhouding geldt niet voor informatie die publiek bekend is of openbaar moet worden op basis van wet of rechterlijk bevel.
+
+20. Overmacht
+20.1. Onder overmacht valt o.a. storingen, cyberincidenten, (D)DoS, uitval van netwerken/datacenters, overheidsmaatregelen, ziekte, brand, natuurrampen.
+20.2. Bij overmacht worden verplichtingen opgeschort. Indien overmacht langer dan 30 dagen duurt, mogen partijen ontbinden zonder schadevergoeding; reeds verrichte prestaties worden naar rato afgerekend.
+
+21. Wijziging voorwaarden
+21.1. Tinsights mag deze voorwaarden wijzigen. Voor lopende abonnementen worden wijzigingen minimaal 30 dagen vooraf aangekondigd.
+21.2. Indien een Consument een wijziging niet accepteert, mag hij/zij het abonnement opzeggen per ingangsdatum wijziging.
+
+22. Toepasselijk recht en geschillen
+22.1. Op alle overeenkomsten is Nederlands recht van toepassing.
+22.2. Geschillen worden voorgelegd aan de bevoegde rechter in Nederland. Voor Consumenten geldt de wettelijke bevoegde rechter.
+
+23. Slotbepalingen
+23.1. Indien een bepaling nietig of vernietigbaar is, blijven overige bepalingen in stand; partijen vervangen de bepaling door een rechtsgeldige die de strekking het meest benadert.
+23.2. Communicatie per e-mail geldt als Schriftelijk.

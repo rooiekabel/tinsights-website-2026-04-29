@@ -1,0 +1,31 @@
+{
+  "binabox": {
+    "replaced": 85,
+    "candidates": 85,
+    "pool": 24,
+    "refs": 112
+  },
+  "ashley": {
+    "replaced": 0,
+    "candidates": 0,
+    "pool": 14,
+    "refs": 66
+  },
+  "montek": {
+    "replaced": 16,
+    "candidates": 16,
+    "pool": 9,
+    "refs": 42
+  },
+  "template": {
+    "replaced": 0,
+    "candidates": 0,
+    "reason": "no pool"
+  },
+  "carola": {
+    "replaced": 61,
+    "candidates": 61,
+    "pool": 30,
+    "refs": 189
+  }
+}

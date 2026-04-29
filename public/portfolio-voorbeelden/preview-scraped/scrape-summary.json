@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "binabox": {
+      "downloaded": 0,
+      "attempted": 49
+    },
+    "ashley": {
+      "downloaded": 0,
+      "attempted": 11
+    },
+    "montek": {
+      "downloaded": 0,
+      "attempted": 42
+    },
+    "barbercrop": {
+      "downloaded": 0,
+      "attempted": 0
+    },
+    "carola": {
+      "downloaded": 0,
+      "attempted": 37
+    }
+  },
+  "blocked": []
+}

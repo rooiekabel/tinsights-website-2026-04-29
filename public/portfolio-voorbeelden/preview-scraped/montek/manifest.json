@@ -1,0 +1,74 @@
+[
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/background/1.jpg",
+    "local_file": "montek/1-6b396a5367f6.jpg",
+    "file_size": 776326,
+    "hash": "6b396a5367f6",
+    "width": 1920,
+    "height": 1076
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/background/2.jpg",
+    "local_file": "montek/2-04a7ad9766b4.jpg",
+    "file_size": 336454,
+    "hash": "04a7ad9766b4",
+    "width": 1919,
+    "height": 636
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/background/3.jpg",
+    "local_file": "montek/3-c55607e693ef.jpg",
+    "file_size": 856778,
+    "hash": "c55607e693ef",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/gallery/1.jpg",
+    "local_file": "montek/1-19850690e21e.jpg",
+    "file_size": 69819,
+    "hash": "19850690e21e",
+    "width": 388,
+    "height": 280
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/gallery/2.jpg",
+    "local_file": "montek/2-8e4955691699.jpg",
+    "file_size": 49124,
+    "hash": "8e4955691699",
+    "width": 388,
+    "height": 280
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/gallery/3.jpg",
+    "local_file": "montek/3-502a4505453a.jpg",
+    "file_size": 47461,
+    "hash": "502a4505453a",
+    "width": 388,
+    "height": 280
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/gallery/4.jpg",
+    "local_file": "montek/4-ee08ce9abdac.jpg",
+    "file_size": 63660,
+    "hash": "ee08ce9abdac",
+    "width": 388,
+    "height": 280
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/gallery/5.jpg",
+    "local_file": "montek/5-b072718c7a8f.jpg",
+    "file_size": 80657,
+    "hash": "b072718c7a8f",
+    "width": 388,
+    "height": 280
+  },
+  {
+    "source_url": "https://demoxml.com/html/montek-demo/assets/images/gallery/6.jpg",
+    "local_file": "montek/6-1372727f920d.jpg",
+    "file_size": 64757,
+    "hash": "1372727f920d",
+    "width": 388,
+    "height": 280
+  }
+]

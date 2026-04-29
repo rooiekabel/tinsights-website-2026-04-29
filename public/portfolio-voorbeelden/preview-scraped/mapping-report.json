@@ -1,0 +1,42 @@
+{
+  "binabox": {
+    "mapped": 101,
+    "pool": {
+      "hero": 4,
+      "card": 11,
+      "portrait": 9
+    },
+    "targets": 101
+  },
+  "ashley": {
+    "mapped": 70,
+    "pool": {
+      "hero": 1,
+      "card": 2,
+      "portrait": 11
+    },
+    "targets": 70
+  },
+  "montek": {
+    "mapped": 32,
+    "pool": {
+      "hero": 3,
+      "card": 6,
+      "portrait": 4
+    },
+    "targets": 32
+  },
+  "template": {
+    "mapped": 0,
+    "reason": "no scraped pool"
+  },
+  "carola": {
+    "mapped": 197,
+    "pool": {
+      "hero": 13,
+      "card": 12,
+      "portrait": 5
+    },
+    "targets": 197
+  }
+}
