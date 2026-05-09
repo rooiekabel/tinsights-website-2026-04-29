@@ -1,3 +1,4 @@
+import SiteIcon from "@/components/SiteIcon";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -106,10 +107,10 @@ export default function DienstenSetupSection() {
                     lineHeight: 1.55,
                   }}
                 >
-                  <i
-                    className="bi bi-check-circle-fill"
-                    style={{ color: "#6366f1", fontSize: 18, flexShrink: 0, marginTop: 1 }}
-                    aria-hidden
+                  <SiteIcon
+                    bootstrap="bi bi-check-circle-fill"
+                    size={18}
+                    style={{ color: "#6366f1", flexShrink: 0, marginTop: 1 }}
                   />
                   {item}
                 </li>

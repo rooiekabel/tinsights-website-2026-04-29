@@ -49,15 +49,12 @@ body::before {
 @keyframes mesh-shift {
   0% {
     transform: translate3d(0, 0, 0) scale(1);
-    filter: blur(0px);
   }
   50% {
     transform: translate3d(-1.5%, 1.2%, 0) scale(1.03);
-    filter: blur(1px);
   }
   100% {
     transform: translate3d(1.5%, -1%, 0) scale(1.02);
-    filter: blur(0px);
   }
 }
 

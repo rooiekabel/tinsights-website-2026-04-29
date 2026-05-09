@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import { useState, useRef } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -58,13 +59,13 @@ function FAQItem({ item, isOpen, onToggle }: {
         <span style={{ fontSize: 16, fontWeight: 600, color: "#0f172a", lineHeight: 1.4, flex: 1 }}>
           {item.q}
         </span>
-        <motion.i
-          className="bi bi-chevron-down"
+        <motion.span
           animate={{ rotate: isOpen ? 180 : 0 }}
           transition={{ duration: 0.25, ease: "easeInOut" }}
-          style={{ fontSize: 18, color: "#6366f1", flexShrink: 0, display: "block" }}
-          aria-hidden
-        />
+          style={{ flexShrink: 0, display: "flex", color: "#6366f1" }}
+        >
+          <SiteIcon bootstrap="bi bi-chevron-down" size={18} />
+        </motion.span>
       </button>
 
       <AnimatePresence initial={false}>

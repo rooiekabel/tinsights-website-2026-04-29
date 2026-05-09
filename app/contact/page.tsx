@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { useState } from "react";
@@ -246,13 +247,13 @@ export default function ContactPage() {
                     flexShrink: 0,
                   }}
                 >
-                  <i className={`bi ${card.icon}`} />
+                  <SiteIcon bootstrap={`bi ${card.icon}`} size={20} />
                 </div>
                 <div>
                   <p style={{ fontSize: 12, fontWeight: 600, color: "#94a3b8", margin: "0 0 4px", letterSpacing: "0.04em", textTransform: "uppercase" }}>
                     {card.label}
                   </p>
-                  <p style={{ fontSize: 15, fontWeight: 600, color: "#0f172a", margin: 0 }}>
+                  <p style={{ fontSize: 15, fontWeight: 600, color: "#0f172a", margin: 0 }} suppressHydrationWarning>
                     {card.value}
                   </p>
                 </div>
@@ -459,7 +460,7 @@ export default function ContactPage() {
                       gap: 8,
                     }}
                   >
-                    <i className="bi bi-exclamation-circle" />
+                    <SiteIcon bootstrap="bi bi-exclamation-circle" size={18} />
                     {error}
                   </div>
                 )}
@@ -566,7 +567,7 @@ export default function ContactPage() {
                   </button>
 
                   <p style={{ fontSize: 12, color: "#94a3b8", textAlign: "center", marginTop: 14, marginBottom: 0 }}>
-                    <i className="bi bi-shield-check" style={{ marginRight: 4 }} />
+                    <SiteIcon bootstrap="bi bi-shield-check" size={14} style={{ marginRight: 4 }} />
                     Je gegevens worden veilig verwerkt en niet gedeeld.
                   </p>
                 </form>

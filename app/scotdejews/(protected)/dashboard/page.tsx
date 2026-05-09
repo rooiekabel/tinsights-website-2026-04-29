@@ -55,6 +55,18 @@ export default async function DashboardPage() {
       icon: "globe",
       external: true,
     },
+    {
+      href: "/scotdejews/automations",
+      title: "Automations",
+      text: "Workflows en routine-taken",
+      icon: "spark",
+    },
+    {
+      href: "/scotdejews/settings",
+      title: "Instellingen",
+      text: "Beheer en configuratie",
+      icon: "gear",
+    },
   ] as const;
 
   return (
@@ -174,7 +186,7 @@ export default async function DashboardPage() {
         .dash-stat-hint { font-size: 0.6875rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; display: block; }
         .dash-grid {
           display: grid;
-          grid-template-columns: minmax(240px, 320px) 1fr;
+          grid-template-columns: minmax(260px, 340px) 1fr;
           gap: 16px;
           align-items: start;
         }
@@ -224,6 +236,12 @@ export default async function DashboardPage() {
         }
         .dash-quick-ico--globe {
           background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23d97706' stroke-width='1.75'%3E%3Ccircle cx='12' cy='12' r='10'/%3E%3Cpath d='M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z'/%3E%3C/svg%3E");
+        }
+        .dash-quick-ico--spark {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23059669' stroke-width='1.75'%3E%3Cpath d='M12 2v4M12 18v4M4 12h4M16 12h4M6.5 6.5l2.8 2.8M14.7 14.7l2.8 2.8M17.5 6.5l-2.8 2.8M9.3 14.7l-2.8 2.8'/%3E%3C/svg%3E");
+        }
+        .dash-quick-ico--gear {
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2364758b' stroke-width='1.75'%3E%3Ccircle cx='12' cy='12' r='3.2'/%3E%3Cpath d='m19 12 .9-.5a1 1 0 0 0 .45-1.3l-.7-1.6a1 1 0 0 0-1.24-.55l-1 .34a6.9 6.9 0 0 0-1.56-1l-.17-1.05a1 1 0 0 0-.99-.84h-1.8a1 1 0 0 0-.99.84l-.17 1.05a6.9 6.9 0 0 0-1.56 1l-1-.34a1 1 0 0 0-1.24.55l-.7 1.6a1 1 0 0 0 .45 1.3L5 12l-.9.5a1 1 0 0 0-.45 1.3l.7 1.6a1 1 0 0 0 1.24.55l1-.34a6.9 6.9 0 0 0 1.56 1l.17 1.05a1 1 0 0 0 .99.84h1.8a1 1 0 0 0 .99-.84l.17-1.05a6.9 6.9 0 0 0 1.56-1l1 .34a1 1 0 0 0 1.24-.55l.7-1.6a1 1 0 0 0-.45-1.3L19 12Z'/%3E%3C/svg%3E");
         }
         .dash-quick-body { flex: 1; min-width: 0; }
         .dash-quick-title { display: block; font-size: 0.9375rem; font-weight: 700; color: var(--t); }

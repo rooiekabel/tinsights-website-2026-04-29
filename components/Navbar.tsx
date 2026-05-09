@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import Link from "next/link";
 import Image from "next/image";
 import { useCallback, useEffect, useRef, useState } from "react";
@@ -7,6 +8,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/diensten", label: "Diensten" },
+  { href: "/branches", label: "Branches" },
   { href: "/projecten", label: "Projecten" },
   { href: "/prijzen", label: "Prijzen" },
   { href: "/over-ons", label: "Over ons" },
@@ -213,9 +215,9 @@ export default function Navbar() {
               className="md-hidden"
             >
               {isMenuOpen ? (
-                <i className="bi bi-x-lg" style={{ fontSize: 18 }} aria-hidden />
+                <SiteIcon bootstrap="bi bi-x-lg" size={18} />
               ) : (
-                <i className="bi bi-list" style={{ fontSize: 20 }} aria-hidden />
+                <SiteIcon bootstrap="bi bi-list" size={20} />
               )}
             </button>
           </div>
@@ -264,7 +266,7 @@ export default function Navbar() {
               padding: 0,
             }}
           >
-            <i className="bi bi-x-lg" style={{ fontSize: 18 }} aria-hidden />
+            <SiteIcon bootstrap="bi bi-x-lg" size={18} />
           </button>
         </div>
 

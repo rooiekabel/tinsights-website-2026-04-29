@@ -140,7 +140,8 @@ export default function FeaturedWork() {
                       src={mockup.src}
                       alt={`${project.title} ${mockup.label}`}
                       fill
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      sizes="(max-width: 768px) min(92vw, 384px), min(420px, 33vw)"
+                      quality={72}
                       className="inner-slide-image"
                       priority={index === 0 && mockupIndex === 0}
                     />
@@ -211,7 +212,14 @@ export default function FeaturedWork() {
                   <div className="inner-track" style={{ transform: `translateX(-${innerSlide[index] * 100}%)` }}>
                     {project.mockups.map((mockup) => (
                       <div className="inner-slide" key={`${project.id}-mobile-${mockup.src}`}>
-                        <Image src={mockup.src} alt={`${project.title} ${mockup.label}`} fill sizes="100vw" className="inner-slide-image" />
+                        <Image
+                          src={mockup.src}
+                          alt={`${project.title} ${mockup.label}`}
+                          fill
+                          sizes="(max-width: 768px) min(92vw, 384px), 90vw"
+                          quality={72}
+                          className="inner-slide-image"
+                        />
                       </div>
                     ))}
                   </div>

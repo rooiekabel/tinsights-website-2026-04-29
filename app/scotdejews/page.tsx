@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
@@ -118,7 +119,7 @@ export default function AdminLoginPage() {
                 gap: 8,
               }}
             >
-              <i className="bi bi-exclamation-circle" style={{ flexShrink: 0 }} />
+              <SiteIcon bootstrap="bi bi-exclamation-circle" size={18} style={{ flexShrink: 0 }} />
               {error}
             </div>
           )}
@@ -221,7 +222,7 @@ export default function AdminLoginPage() {
                   }}
                   tabIndex={-1}
                 >
-                  <i className={`bi bi-eye${showPass ? "-slash" : ""}`} style={{ fontSize: 16 }} />
+                  <SiteIcon bootstrap={showPass ? "bi bi-eye-slash" : "bi bi-eye"} size={16} />
                 </button>
               </div>
             </div>

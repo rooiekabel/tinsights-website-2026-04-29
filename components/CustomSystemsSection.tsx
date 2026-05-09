@@ -1,3 +1,4 @@
+import SiteIcon from "@/components/SiteIcon";
 import Link from "next/link";
 
 const cards = [
@@ -60,7 +61,7 @@ export default function CustomSystemsSection() {
                 index === 0 ? "w-[min(82vw,300px)] snap-start" : "w-[min(82vw,300px)] snap-center"
               } md:w-auto md:shrink`}
             >
-              <i className={`bi ${card.icon} text-xl text-indigo-600`} aria-hidden />
+              <SiteIcon bootstrap={`bi ${card.icon}`} className="text-indigo-600" size={20} />
               <h3 className="mt-3 text-base font-semibold text-slate-900">{card.title}</h3>
               <p className="mt-2 text-sm leading-6 text-slate-600">{card.body}</p>
             </article>

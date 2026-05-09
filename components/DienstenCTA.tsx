@@ -1,3 +1,4 @@
+import SiteIcon from "@/components/SiteIcon";
 import Link from "next/link";
 
 export default function DienstenCTA() {
@@ -70,7 +71,7 @@ export default function DienstenCTA() {
               transition: "transform 200ms ease, box-shadow 200ms ease",
             }}
           >
-            <i className="bi bi-send" aria-hidden />
+            <SiteIcon bootstrap="bi bi-send" size={16} />
             Gratis voorstel aanvragen
           </Link>
 
@@ -92,7 +93,7 @@ export default function DienstenCTA() {
               transition: "border-color 200ms ease, background 200ms ease",
             }}
           >
-            <i className="bi bi-telephone" aria-hidden />
+            <SiteIcon bootstrap="bi bi-telephone" size={16} />
             Bel direct: 085-369 6652
           </Link>
         </div>

@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import { usePathname } from "next/navigation";
 
 export default function TopBar() {
@@ -66,7 +67,7 @@ export default function TopBar() {
             {/* Desktop only: location */}
             <span className="topbar-desktop" style={{ display: "flex", alignItems: "center" }}>
               <a href="https://maps.google.com/?q=Groningen,Nederland" target="_blank" rel="noreferrer">
-                <i className="bi bi-geo-alt-fill" aria-hidden />
+                <SiteIcon bootstrap="bi bi-geo-alt-fill" size={13} />
                 Groningen, Nederland
               </a>
               <span className="topbar-divider" aria-hidden style={{ margin: "0 16px" }} />
@@ -83,14 +84,14 @@ export default function TopBar() {
             {/* Desktop only: phone */}
             <span className="topbar-desktop" style={{ display: "flex", alignItems: "center" }}>
               <a href="tel:0853696652">
-                <i className="bi bi-telephone-fill" aria-hidden />
+                <SiteIcon bootstrap="bi bi-telephone-fill" size={13} />
                 085 - 369 6652
               </a>
               <span className="topbar-divider" aria-hidden style={{ margin: "0 16px" }} />
             </span>
             {/* Always visible: Bel ons nu */}
             <a href="tel:0853696652">
-              <i className="bi bi-telephone-fill" style={{ color: "#6366f1" }} aria-hidden />
+              <SiteIcon bootstrap="bi bi-telephone-fill" size={13} style={{ color: "#6366f1" }} />
               Bel ons nu
             </a>
           </div>

@@ -1,12 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+import mobileBgOffice from "../computer-at-modern-office-2026-03-17-04-41-47-utc.jpg";
+import mobileBgTeam from "../focused-men-work-on-computers-in-shared-workspace-2026-03-09-21-45-17-utc.jpg";
+import mobileBgAbstract from "../abstract-architectural-design-with-blue-and-gold-g-2026-01-11-08-40-07-utc.jpg";
+
+const MOBILE_HERO_BACKGROUNDS = {
+  office: mobileBgOffice,
+  team: mobileBgTeam,
+  abstract: mobileBgAbstract,
+} as const;
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [useVideoBg, setUseVideoBg] = useState(true);
+  // Active test image for smartphones; switch this key to compare alternatives quickly.
+  const activeMobileHeroBackground = MOBILE_HERO_BACKGROUNDS.office;
+  /** Start false: avoids flashing video intent on mobile before hydration; desktop enables video after measure. */
+  const [useVideoBg, setUseVideoBg] = useState(false);
 
   useEffect(() => {
     const nav = navigator as Navigator & {
@@ -15,11 +28,13 @@ export default function Hero() {
     };
 
     const resolveVideoMode = () => {
+      const isNarrowViewport = window.matchMedia("(max-width: 900px)").matches;
+      const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
       const lowPowerHints =
         nav.connection?.saveData ||
         (typeof nav.hardwareConcurrency === "number" && nav.hardwareConcurrency <= 2) ||
         (typeof nav.deviceMemory === "number" && nav.deviceMemory <= 2);
-      setUseVideoBg(!lowPowerHints);
+      setUseVideoBg(!(lowPowerHints || isNarrowViewport || prefersReducedMotion));
     };
 
     resolveVideoMode();
@@ -83,6 +98,17 @@ export default function Hero() {
     <>
       <style>{`
         @media (max-width: 767px) {
+          .hero-section {
+            min-height: auto !important;
+            padding-bottom: 24px !important;
+          }
+          .hero-content-wrap {
+            min-height: auto !important;
+            justify-content: flex-start !important;
+          }
+          .hero-content-grid {
+            gap: 4px !important;
+          }
           .hero-buttons {
             flex-direction: column !important;
             align-items: stretch !important;
@@ -100,26 +126,41 @@ export default function Hero() {
           }
           .hero-subtext {
             text-align: center !important;
-          }
-          .hero-mockup-stack {
-            width: 100% !important;
-            margin-top: 32px !important;
-            padding: 0 12px !important;
-            max-width: none !important;
-          }
-          .hero-mockup-main {
-            filter: drop-shadow(0 20px 50px rgba(0, 0, 0, 0.5)) !important;
-            border-radius: 10px !important;
-          }
-          .hero-delivered-badge {
-            margin-top: 16px !important;
-            justify-content: center !important;
+            margin-bottom: 18px !important;
           }
           .hero-delivered-pill {
             padding: 9px 16px !important;
           }
           .hero-delivered-subtitle {
             font-size: 12px !important;
+          }
+        }
+        /* Homepage hero mockup + badge: tablet & phone only (below lg / 1024px) */
+        @media (max-width: 1023px) {
+          .hero-mockup-stack {
+            width: 100% !important;
+            max-width: none !important;
+            margin-left: auto !important;
+            margin-right: auto !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+            box-sizing: border-box !important;
+            align-items: center !important;
+          }
+          .hero-mockup-panel {
+            transform: none !important;
+          }
+          .hero-mockup-main {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            object-fit: contain !important;
+            filter: drop-shadow(0 24px 56px rgba(0, 0, 0, 0.5)) !important;
+            border-radius: 10px !important;
+          }
+          .hero-delivered-badge {
+            margin-top: 1.5rem !important;
+            justify-content: center !important;
           }
         }
         @keyframes ping {
@@ -139,6 +180,10 @@ export default function Hero() {
         }
         .hero-bg-vid {
           will-change: transform;
+          transform: translateZ(0);
+          backface-visibility: hidden;
+        }
+        .hero-bg-static-img {
           transform: translateZ(0);
           backface-visibility: hidden;
         }
@@ -174,8 +219,28 @@ export default function Hero() {
           .hero-bg-video {
             display: none !important;
           }
-          .hero-section {
-            background: #0f172a !important;
+        }
+        .hero-int-links {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 24px;
+          margin-top: 20px;
+        }
+        .hero-int-links a {
+          color: rgba(255, 255, 255, 0.45);
+          font-size: 13px;
+          text-decoration: none;
+          transition: color 0.2s ease;
+        }
+        .hero-int-links a:hover {
+          color: rgba(255, 255, 255, 0.8);
+        }
+        @media (max-width: 767px) {
+          .hero-int-links {
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            width: 100%;
           }
         }
       `}</style>
@@ -185,6 +250,21 @@ export default function Hero() {
         className="hero-section relative flex min-h-[90vh] items-center overflow-hidden px-4 pb-16 pt-32 sm:px-6 sm:pt-28 md:pt-32 lg:px-8 lg:pt-24"
         style={!useVideoBg ? { background: "#0b1220" } : undefined}
       >
+        {/* Static background on mobile / when video is off — lighter than video, same vibe */}
+        {!useVideoBg && (
+          <div className="hero-bg-static absolute inset-0 z-0 overflow-hidden" aria-hidden>
+            <Image
+              src={activeMobileHeroBackground}
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="hero-bg-static-img object-cover"
+              quality={72}
+            />
+          </div>
+        )}
+
         {/* Full-bleed background video (playback hooks in useEffect above) */}
         {useVideoBg && (
           <div className="hero-bg-video absolute inset-0 z-0 overflow-hidden" aria-hidden>
@@ -195,7 +275,7 @@ export default function Hero() {
               muted
               loop
               playsInline
-              preload="metadata"
+              preload="none"
               disablePictureInPicture
               style={{
                 position: "absolute",
@@ -222,15 +302,15 @@ export default function Hero() {
           aria-hidden
         />
 
-        <div className="relative z-10 flex min-h-[90vh] w-full flex-col justify-center">
-          <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
+        <div className="hero-content-wrap relative z-10 flex min-h-[90vh] w-full flex-col justify-center">
+          <div className="hero-content-grid mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
             {/* ── Text column ── */}
             <motion.div
               className="hero-text-col flex flex-col items-start"
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 1, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.55, ease: "easeOut" }}
+              transition={{ duration: 0.45, ease: "easeOut" }}
               style={{ maxWidth: 620 }}
             >
               {/* Label */}
@@ -332,14 +412,20 @@ export default function Hero() {
                   Bekijk projecten
                 </Link>
               </div>
+
+              <div className="hero-int-links">
+                <Link href="/branches">Bekijk alle branches →</Link>
+                <Link href="/webdesign-groningen">Webdesign in Groningen →</Link>
+                <Link href="/prijzen">Prijzen bekijken →</Link>
+              </div>
             </motion.div>
 
             {/* ── Chatvora single mockup ── */}
             <motion.div
-              initial={{ opacity: 0, y: 24 }}
+              initial={{ opacity: 1, y: 14 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
-              className="z-[2] w-full lg:flex lg:flex-col lg:items-end lg:justify-center lg:pr-0"
+              transition={{ duration: 0.55, delay: 0.08, ease: "easeOut" }}
+              className="z-[2] w-full max-lg:mt-10 lg:flex lg:flex-col lg:items-end lg:justify-center lg:pr-0"
             >
               <div
                 className="hero-mockup-stack hero-mockup-panel"
@@ -355,11 +441,15 @@ export default function Hero() {
                   marginRight: "auto",
                 }}
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                <Image
                   className="hero-mockup-main animate-float"
-                  src="/portfolio-voorbeelden/mockups/chatvora_breed.png"
-                  alt="Chatvora.org website mockup — gebouwd door Tinsights"
+                  src="/assets/881shots_so.png"
+                  alt="Voorbeeld website gebouwd door Tinsights"
+                  width={1920}
+                  height={1440}
+                  priority
+                  quality={72}
+                  sizes="(max-width: 1024px) 92vw, 52vw"
                   style={{
                     width: "106%",
                     height: "auto",

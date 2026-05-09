@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import ParticlesCanvas from "@/components/ParticlesCanvas";
 import Link from "next/link";
 
@@ -57,7 +58,7 @@ export default function ContactCTA() {
             letterSpacing: "0.02em",
           }}
         >
-          <i className="bi bi-chat-dots" style={{ fontSize: 14 }} aria-hidden />
+          <SiteIcon bootstrap="bi bi-chat-dots" size={14} />
           Gratis kennismakingsgesprek
         </div>
 
@@ -139,7 +140,7 @@ export default function ContactCTA() {
                 whiteSpace: "nowrap",
               }}
             >
-              <i className="bi bi-whatsapp" style={{ fontSize: 17 }} aria-hidden />
+              <SiteIcon bootstrap="bi bi-whatsapp" size={17} />
               WhatsApp
             </a>
 
@@ -164,8 +165,8 @@ export default function ContactCTA() {
                 whiteSpace: "nowrap",
               }}
             >
-              <i className="bi bi-envelope" style={{ fontSize: 16 }} aria-hidden />
-              info@tinsights.nl
+              <SiteIcon bootstrap="bi bi-envelope" size={16} />
+              <span suppressHydrationWarning>info@tinsights.nl</span>
             </a>
 
             {/* Bellen */}
@@ -189,7 +190,7 @@ export default function ContactCTA() {
                 whiteSpace: "nowrap",
               }}
             >
-              <i className="bi bi-telephone" style={{ fontSize: 16 }} aria-hidden />
+              <SiteIcon bootstrap="bi bi-telephone" size={16} />
               085 - 369 6652
             </a>
           </div>

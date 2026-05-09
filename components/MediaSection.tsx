@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -100,10 +101,10 @@ export default function MediaSection() {
                 el.style.boxShadow = "none";
               }}
             >
-              <i
-                className={`bi ${card.icon}`}
-                style={{ fontSize: 32, color: "#6366f1", display: "block", marginBottom: 20 }}
-                aria-hidden
+              <SiteIcon
+                bootstrap={`bi ${card.icon}`}
+                size={32}
+                style={{ color: "#6366f1", display: "block", marginBottom: 20 }}
               />
               <h3 style={{ fontSize: 18, fontWeight: 700, color: "#0f172a", margin: "0 0 10px", lineHeight: 1.25 }}>
                 {card.title}
@@ -154,7 +155,7 @@ export default function MediaSection() {
             }}
           >
             Bekijk al onze diensten
-            <i className="bi bi-arrow-right" style={{ fontSize: 17 }} aria-hidden />
+            <SiteIcon bootstrap="bi bi-arrow-right" size={17} />
           </Link>
         </motion.div>
 

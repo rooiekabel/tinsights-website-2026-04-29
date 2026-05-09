@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -96,10 +97,10 @@ export default function About() {
                 el.style.boxShadow = "none";
               }}
             >
-              <i
-                className={`bi ${card.icon}`}
-                style={{ fontSize: 28, color: "#6366f1", display: "block", marginBottom: 16 }}
-                aria-hidden
+              <SiteIcon
+                bootstrap={`bi ${card.icon}`}
+                size={28}
+                style={{ color: "#6366f1", display: "block", marginBottom: 16 }}
               />
               <h3 style={{ fontSize: 16, fontWeight: 700, color: "#0f172a", margin: "0 0 10px" }}>
                 {card.title}

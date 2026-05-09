@@ -72,10 +72,12 @@ const websitePakketten = [
 const hostingPakketten = [
   {
     name: "Starter",
-    priceMonthly: "€5",
-    priceYearly: "€4",
-    yearlyTotal: "€48/jaar",
-    period: "per maand",
+    priceMonthly: "€19",
+    priceYearly: "€190",
+    oldPriceMonthly: "€24",
+    oldPriceYearly: "€238",
+    unitMonthly: "/m",
+    unitYearly: "/jr",
     desc: "Voor kleine websites die betrouwbaar online moeten zijn.",
     features: ["Gratis .nl of .com domein", "5GB SSD storage", "50GB bandbreedte", "Gratis SSL certificaat", "Dagelijkse backup", "E-mail support"],
     cta: "Kies Starter",
@@ -83,10 +85,12 @@ const hostingPakketten = [
   },
   {
     name: "Basic",
-    priceMonthly: "€10",
-    priceYearly: "€8",
-    yearlyTotal: "€96/jaar",
-    period: "per maand",
+    priceMonthly: "€29",
+    priceYearly: "€290",
+    oldPriceMonthly: "€36",
+    oldPriceYearly: "€348",
+    unitMonthly: "/m",
+    unitYearly: "/jr",
     desc: "De meest gekozen optie voor professionele websites.",
     features: ["Gratis .nl of .com domein", "15GB SSD storage", "150GB bandbreedte", "Gratis SSL certificaat", "2x dagelijkse backup", "Priority support", "2 e-mailaccounts"],
     cta: "Kies Basic",
@@ -95,10 +99,12 @@ const hostingPakketten = [
   },
   {
     name: "Pro",
-    priceMonthly: "€15",
-    priceYearly: "€12",
-    yearlyTotal: "€144/jaar",
-    period: "per maand",
+    priceMonthly: "€49",
+    priceYearly: "€490",
+    oldPriceMonthly: "€59",
+    oldPriceYearly: "€588",
+    unitMonthly: "/m",
+    unitYearly: "/jr",
     desc: "Voor webshops en drukbezochte websites.",
     features: ["Gratis .nl of .com domein", "30GB SSD storage", "Onbeperkte bandbreedte", "Gratis SSL certificaat", "4x dagelijkse backup", "24/7 priority support", "10 e-mailaccounts", "Performance monitoring"],
     cta: "Kies Pro",
@@ -612,7 +618,7 @@ function HostingSection() {
           </span>
         </div>
 
-        <div style={{ ...gridStyle, gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
+        <div id="hosting-cards" style={{ ...gridStyle, gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}>
           {hostingPakketten.map((p) => (
             <HostingCard key={p.name} p={p} yearly={yearly} />
           ))}
@@ -633,6 +639,9 @@ function HostingSection() {
             </div>
           ))}
         </div>
+
+        {/* Comparison table */}
+        <HostingComparisonTable />
       </div>
     </section>
   );
@@ -655,6 +664,8 @@ function HostingCard({ p, yearly }: { p: HostingPakket; yearly: boolean }) {
   }, []);
 
   const displayPrice = yearly ? p.priceYearly : p.priceMonthly;
+  const displayUnit  = yearly ? p.unitYearly  : p.unitMonthly;
+  const oldPrice     = yearly ? p.oldPriceYearly : p.oldPriceMonthly;
   const GREEN = "#22c55e";
 
   return (
@@ -669,19 +680,17 @@ function HostingCard({ p, yearly }: { p: HostingPakket; yearly: boolean }) {
       <p className="pc-name">{p.name}</p>
       <p className="pc-desc">{p.desc}</p>
       <div className="pc-price-row">
-        <div style={{ display: "flex", alignItems: "baseline", gap: 6 }}>
-          <div className="pc-price" style={{ transition: "all 250ms" }}>{displayPrice}</div>
-          {yearly && (
-            <span style={{ fontSize: 13, color: "rgba(255,255,255,0.35)", textDecoration: "line-through" }}>
-              {p.priceMonthly}
-            </span>
-          )}
+        <div style={{ display: "flex", alignItems: "baseline", gap: 6, flexWrap: "wrap" }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 2 }}>
+            <div className="pc-price" style={{ transition: "all 250ms" }}>{displayPrice}</div>
+            <span style={{ fontSize: 16, fontWeight: 600, color: "rgba(255,255,255,0.55)", marginBottom: 1 }}>{displayUnit}</span>
+          </div>
+          <span style={{ fontSize: 13, color: "rgba(255,255,255,0.32)", textDecoration: "line-through" }}>
+            {oldPrice}
+          </span>
         </div>
-        <div className="pc-period">
-          {yearly
-            ? <>{p.period} · <span style={{ color: GREEN, fontWeight: 600 }}>{p.yearlyTotal}</span></>
-            : p.period
-          }
+        <div className="pc-period" style={{ marginTop: 6 }}>
+          {yearly ? "per jaar" : "per maand"}
         </div>
         {yearly && (
           <div style={{ marginTop: 6, fontSize: 12, color: GREEN, fontWeight: 600 }}>
@@ -707,6 +716,181 @@ function HostingCard({ p, yearly }: { p: HostingPakket; yearly: boolean }) {
       >
         {p.cta} →
       </Link>
+    </div>
+  );
+}
+
+/* ══════════════════════════════════════════════════════════════════════
+   HOSTING COMPARISON TABLE
+══════════════════════════════════════════════════════════════════════ */
+
+const comparisonRows: { feature: string; starter: string; basic: string; pro: string }[] = [
+  { feature: "Gratis .nl of .com domein",  starter: "✓",         basic: "✓",         pro: "✓"         },
+  { feature: "Gratis SSL certificaat",      starter: "✓",         basic: "✓",         pro: "✓"         },
+  { feature: "SSD Storage",                starter: "5GB",        basic: "15GB",       pro: "30GB"      },
+  { feature: "Bandbreedte",                starter: "50GB",       basic: "150GB",      pro: "Onbeperkt" },
+  { feature: "Dagelijkse backup",          starter: "1x",         basic: "2x",         pro: "4x"        },
+  { feature: "E-mailaccounts",             starter: "1",          basic: "2",          pro: "10"        },
+  { feature: "E-mail support",             starter: "✓",         basic: "✓",         pro: "✓"         },
+  { feature: "Priority support",           starter: "—",         basic: "✓",         pro: "✓"         },
+  { feature: "24/7 support",              starter: "—",         basic: "—",         pro: "✓"         },
+  { feature: "Performance monitoring",     starter: "—",         basic: "—",         pro: "✓"         },
+  { feature: "Uptime garantie",            starter: "99.9%",      basic: "99.9%",      pro: "99.9%"     },
+  { feature: "Geschikt voor webshops",     starter: "—",         basic: "✓",         pro: "✓"         },
+  { feature: "Maandelijks opzegbaar",      starter: "✓",         basic: "✓",         pro: "✓"         },
+];
+
+function HostingComparisonTable() {
+  const GREEN = "#22c55e";
+
+  const renderCell = (val: string, isBasic = false) => {
+    if (val === "✓") return (
+      <span style={{ color: GREEN, fontWeight: 700, fontSize: 16 }}>✓</span>
+    );
+    if (val === "—") return (
+      <span style={{ color: "rgba(255,255,255,0.22)", fontSize: 15 }}>—</span>
+    );
+    return (
+      <span style={{ color: isBasic ? "#a5b4fc" : "rgba(255,255,255,0.75)", fontWeight: 600, fontSize: 13 }}>{val}</span>
+    );
+  };
+
+  return (
+    <div style={{ marginTop: 72 }}>
+      {/* Section title */}
+      <div style={{ textAlign: "center", marginBottom: 40 }}>
+        <p style={{ fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "#22c55e", margin: "0 0 12px" }}>
+          VERGELIJKING
+        </p>
+        <h2 style={{ fontSize: "clamp(1.6rem,3.5vw,2.2rem)", fontWeight: 800, color: "#f1f5f9", margin: "0 0 12px", letterSpacing: "-0.01em" }}>
+          Alles overzichtelijk vergeleken
+        </h2>
+        <p style={{ fontSize: 15, lineHeight: 1.7, color: "rgba(255,255,255,0.5)", maxWidth: 520, margin: "0 auto" }}>
+          Niet zeker welk hostingpakket bij u past?{" "}
+          Dit overzicht helpt u de juiste keuze te maken.
+        </p>
+      </div>
+
+      {/* Scrollable table wrapper */}
+      <div style={{ overflowX: "auto", borderRadius: 20, border: "1px solid rgba(255,255,255,0.08)" }}>
+        <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 580 }}>
+          {/* Header */}
+          <thead>
+            <tr style={{ background: "#111827" }}>
+              <th style={{
+                padding: "18px 20px", textAlign: "left", fontSize: 13,
+                fontWeight: 700, color: "rgba(255,255,255,0.45)",
+                borderBottom: "1px solid rgba(255,255,255,0.08)", width: "38%",
+              }}>
+                Functie
+              </th>
+              {[
+                { label: "Starter", price: "€19/m", highlight: false },
+                { label: "Basic",   price: "€29/m", highlight: true  },
+                { label: "Pro",     price: "€49/m", highlight: false },
+              ].map((col) => (
+                <th
+                  key={col.label}
+                  style={{
+                    padding: "18px 16px", textAlign: "center",
+                    borderBottom: "1px solid rgba(255,255,255,0.08)",
+                    background: col.highlight ? "rgba(34,197,94,0.07)" : undefined,
+                    borderLeft: col.highlight ? "1px solid rgba(34,197,94,0.2)" : "1px solid rgba(255,255,255,0.06)",
+                    borderRight: col.highlight ? "1px solid rgba(34,197,94,0.2)" : undefined,
+                    position: "relative",
+                  }}
+                >
+                  {col.highlight && (
+                    <span style={{
+                      position: "absolute", top: -1, left: "50%", transform: "translateX(-50%)",
+                      fontSize: 9, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase",
+                      background: GREEN, color: "#fff", padding: "2px 10px", borderRadius: "0 0 8px 8px",
+                    }}>
+                      Populair
+                    </span>
+                  )}
+                  <div style={{ fontSize: 15, fontWeight: 800, color: "#f1f5f9", marginBottom: 4 }}>{col.label}</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: col.highlight ? GREEN : "#7f77dd" }}>{col.price}</div>
+                </th>
+              ))}
+            </tr>
+          </thead>
+
+          {/* Body */}
+          <tbody>
+            {comparisonRows.map((row, i) => (
+              <tr key={row.feature} style={{ background: i % 2 === 0 ? "#0d1117" : "#0f1420" }}>
+                <td style={{
+                  padding: "13px 20px", fontSize: 13, color: "rgba(255,255,255,0.68)",
+                  borderBottom: "1px solid rgba(255,255,255,0.05)", fontWeight: 500,
+                }}>
+                  {row.feature}
+                </td>
+                <td style={{
+                  padding: "13px 16px", textAlign: "center",
+                  borderBottom: "1px solid rgba(255,255,255,0.05)",
+                  borderLeft: "1px solid rgba(255,255,255,0.06)",
+                }}>
+                  {renderCell(row.starter)}
+                </td>
+                <td style={{
+                  padding: "13px 16px", textAlign: "center",
+                  borderBottom: "1px solid rgba(34,197,94,0.08)",
+                  borderLeft: "1px solid rgba(34,197,94,0.2)",
+                  borderRight: "1px solid rgba(34,197,94,0.2)",
+                  background: "rgba(34,197,94,0.04)",
+                }}>
+                  {renderCell(row.basic, true)}
+                </td>
+                <td style={{
+                  padding: "13px 16px", textAlign: "center",
+                  borderBottom: "1px solid rgba(255,255,255,0.05)",
+                }}>
+                  {renderCell(row.pro)}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Note */}
+      <p style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", textAlign: "center", margin: "16px 0 32px", lineHeight: 1.6 }}>
+        Alle pakketten zijn maandelijks opzegbaar.{" "}
+        Kies jaarlijks voor 2 maanden gratis.
+      </p>
+
+      {/* CTA buttons */}
+      <div style={{ display: "flex", gap: 14, justifyContent: "center", flexWrap: "wrap" }}>
+        <a
+          href="#hosting-cards"
+          onClick={(e) => {
+            e.preventDefault();
+            document.getElementById("hosting-cards")?.scrollIntoView({ behavior: "smooth" });
+          }}
+          style={{
+            display: "inline-flex", alignItems: "center", gap: 8,
+            background: GREEN, color: "#fff",
+            fontSize: 14, fontWeight: 700, padding: "13px 28px",
+            borderRadius: 50, textDecoration: "none",
+            transition: "opacity 180ms",
+          }}
+        >
+          Kies jouw pakket →
+        </a>
+        <Link
+          href="/contact"
+          style={{
+            display: "inline-flex", alignItems: "center", gap: 8,
+            background: "transparent", color: "rgba(255,255,255,0.75)",
+            fontSize: 14, fontWeight: 600, padding: "13px 28px",
+            borderRadius: 50, border: "1px solid rgba(255,255,255,0.2)",
+            textDecoration: "none", transition: "border-color 180ms, color 180ms",
+          }}
+        >
+          Stel een vraag
+        </Link>
+      </div>
     </div>
   );
 }

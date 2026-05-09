@@ -38,6 +38,25 @@ const navItems = [
       </svg>
     ),
   },
+  {
+    href: "/scotdejews/automations",
+    label: "Automations",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="admin-nav-icon" aria-hidden>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 18h6M10 22h4M12 2v2M4.93 4.93l1.41 1.41M19.07 4.93l-1.41 1.41M2 12h2M20 12h2M6 12a6 6 0 1 1 12 0c0 2.24-1.24 3.79-2.42 4.95-.34.34-.58.77-.58 1.24V19H9v-.81c0-.47-.24-.9-.58-1.24C7.24 15.79 6 14.24 6 12Z" />
+      </svg>
+    ),
+  },
+  {
+    href: "/scotdejews/settings",
+    label: "Instellingen",
+    icon: (
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" className="admin-nav-icon" aria-hidden>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 15.2a3.2 3.2 0 1 0 0-6.4 3.2 3.2 0 0 0 0 6.4Z" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="m19.4 15 .1.5a1.9 1.9 0 0 1-.4 1.7l-.1.2a1.9 1.9 0 0 1-2.3.4l-.5-.2a1.9 1.9 0 0 0-1.7.2l-.4.3a1.9 1.9 0 0 0-.7 1.5V20a1.9 1.9 0 0 1-1.9 1.9h-.3A1.9 1.9 0 0 1 9.3 20v-.5a1.9 1.9 0 0 0-.7-1.5l-.4-.3a1.9 1.9 0 0 0-1.7-.2l-.5.2a1.9 1.9 0 0 1-2.3-.4l-.1-.2a1.9 1.9 0 0 1-.4-1.7L3.3 15a1.9 1.9 0 0 0-.4-1.6l-.3-.4a1.9 1.9 0 0 1 0-2.3l.3-.4a1.9 1.9 0 0 0 .4-1.6l-.1-.5a1.9 1.9 0 0 1 .4-1.7l.1-.2a1.9 1.9 0 0 1 2.3-.4l.5.2a1.9 1.9 0 0 0 1.7-.2l.4-.3a1.9 1.9 0 0 0 .7-1.5V4a1.9 1.9 0 0 1 1.9-1.9h.3A1.9 1.9 0 0 1 13.4 4v.5a1.9 1.9 0 0 0 .7 1.5l.4.3a1.9 1.9 0 0 0 1.7.2l.5-.2a1.9 1.9 0 0 1 2.3.4l.1.2a1.9 1.9 0 0 1 .4 1.7l-.1.5a1.9 1.9 0 0 0 .4 1.6l.3.4a1.9 1.9 0 0 1 0 2.3l-.3.4a1.9 1.9 0 0 0-.4 1.6Z" />
+      </svg>
+    ),
+  },
 ];
 
 export default function AdminShell({ children }: { children: React.ReactNode }) {

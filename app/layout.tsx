@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import TopBar from "@/components/TopBar";
 import { Outfit, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
@@ -58,6 +58,9 @@ export const metadata: Metadata = {
     follow: true,
     googleBot: { index: true, follow: true },
   },
+};
+
+export const viewport: Viewport = {
   themeColor: "#0a0a0f",
 };
 
@@ -76,10 +79,6 @@ export default function RootLayout({
         <link rel="shortcut icon" href="/assets/favicon.PNG?v=3" />
         <link rel="mask-icon" href="/assets/favicon.PNG" color="#6366f1" />
         <meta name="theme-color" content="#0a0a0f" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-        />
       </head>
       <body className={`${plusJakarta.className} min-h-dvh bg-background text-foreground antialiased`}>
         <TopBar />

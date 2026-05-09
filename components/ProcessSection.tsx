@@ -1,5 +1,6 @@
 "use client";
 
+import SiteIcon from "@/components/SiteIcon";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "@/lib/gsapClient";
@@ -128,10 +129,10 @@ export default function ProcessSection() {
                 </div>
 
                 {/* Icon */}
-                <i
-                  className={`bi ${s.icon}`}
-                  style={{ fontSize: 28, color: "#a5b4fc", display: "block", marginBottom: 14 }}
-                  aria-hidden
+                <SiteIcon
+                  bootstrap={`bi ${s.icon}`}
+                  size={28}
+                  style={{ color: "#a5b4fc", display: "block", marginBottom: 14 }}
                 />
 
                 {/* Title */}

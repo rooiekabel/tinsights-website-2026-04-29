@@ -1,9 +1,8 @@
 "use client";
 
-import Image from "next/image";
-
 type Item = { id: string; label: string; src: string };
 
+/** Herkenbare tech + platforms (logo-SVG’s in /public/assets/logos/). */
 const items: Item[] = [
   { id: "nextjs", label: "Next.js", src: "/assets/logos/nextjs.svg" },
   { id: "react", label: "React", src: "/assets/logos/react.svg" },
@@ -11,12 +10,18 @@ const items: Item[] = [
   { id: "tailwindcss", label: "Tailwind CSS", src: "/assets/logos/tailwindcss.svg" },
   { id: "nodejs", label: "Node.js", src: "/assets/logos/nodejs.svg" },
   { id: "vercel", label: "Vercel", src: "/assets/logos/vercel.svg" },
+  { id: "google", label: "Google", src: "/assets/logos/google.svg?v=3" },
+  { id: "microsoft", label: "Microsoft", src: "/assets/logos/microsoft.svg" },
+  { id: "meta", label: "Meta", src: "/assets/logos/meta.svg" },
   { id: "stripe", label: "Stripe", src: "/assets/logos/stripe.svg" },
+  { id: "shopify", label: "Shopify", src: "/assets/logos/shopify.svg" },
+  { id: "aws", label: "AWS", src: "/assets/logos/aws.svg" },
+  { id: "slack", label: "Slack", src: "/assets/logos/slack.svg" },
+  { id: "figma", label: "Figma", src: "/assets/logos/figma.svg" },
+  { id: "hubspot", label: "HubSpot", src: "/assets/logos/hubspot.svg" },
   { id: "postgresql", label: "PostgreSQL", src: "/assets/logos/postgresql.svg" },
   { id: "docker", label: "Docker", src: "/assets/logos/docker.svg" },
   { id: "github", label: "GitHub", src: "/assets/logos/github.svg" },
-  { id: "google", label: "Google", src: "/assets/logos/google.svg" },
-  { id: "meta", label: "Meta", src: "/assets/logos/meta.svg" },
   { id: "cloudflare", label: "Cloudflare", src: "/assets/logos/cloudflare.svg" },
 ];
 
@@ -63,13 +68,14 @@ function Pill({ item, instanceId }: { item: Item; instanceId: string }) {
           flexShrink: 0,
         }}
       >
-        <Image
+        {/* Geen next/image: SVG meerkleurig betrouwbaar; next lint deliberately skipped */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={item.src}
           alt=""
-          fill
-          sizes="120px"
-          className="object-contain"
-          unoptimized
+          className="absolute inset-0 h-full w-full max-h-[36px] object-contain"
+          loading="lazy"
+          decoding="async"
           aria-hidden
         />
       </div>
@@ -175,8 +181,8 @@ export default function TechStackLoop() {
             display: "flex",
             width: "max-content",
             alignItems: "stretch",
-            minHeight: 108,
-            animation: "tsl-scroll 48s linear infinite",
+        minHeight: 108,
+        animation: "tsl-scroll 64s linear infinite",
             willChange: "transform",
           }}
         >

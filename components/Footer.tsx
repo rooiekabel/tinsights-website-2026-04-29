@@ -1,13 +1,30 @@
 "use client";
 
 import Link from "next/link";
+import SiteIcon from "@/components/SiteIcon";
 
 const diensten = [
   { href: "/diensten/web-development", label: "Web Development" },
-  { href: "/diensten/ethical-hacking", label: "Ethical Hacking" },
-  { href: "/diensten/hosting-onderhoud", label: "Hosting & Onderhoud" },
   { href: "/diensten/seo-zichtbaarheid", label: "SEO & Zichtbaarheid" },
+  { href: "/diensten/hosting-onderhoud", label: "Hosting & Onderhoud" },
   { href: "/diensten/automatisering", label: "Automatisering" },
+  { href: "/diensten/ethical-hacking", label: "Ethical Hacking" },
+];
+
+const branches = [
+  { href: "/website-laten-maken-kapper", label: "Kappers & barbershops" },
+  { href: "/website-laten-maken-restaurant", label: "Restaurants & horeca" },
+  { href: "/website-laten-maken-garage", label: "Garages & APK" },
+  { href: "/website-laten-maken-autobedrijf", label: "Autobedrijven & occasions" },
+  { href: "/website-laten-maken-tandarts", label: "Tandartspraktijken" },
+];
+
+const steden = [
+  { href: "/webdesign-groningen", label: "Webdesign Groningen" },
+  { href: "/webdesign-assen", label: "Webdesign Assen" },
+  { href: "/webdesign-zwolle", label: "Webdesign Zwolle" },
+  { href: "/webdesign-leeuwarden", label: "Webdesign Leeuwarden" },
+  { href: "/webdesign-drachten", label: "Webdesign Drachten" },
 ];
 
 const navLinks = [
@@ -59,11 +76,11 @@ export default function Footer() {
     <footer style={{ background: "#0f172a", borderTop: "1px solid #1e293b" }}>
       <div
         style={{ maxWidth: 1280, margin: "0 auto", padding: "64px 24px 0" }}
-        className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4"
+        className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-6"
       >
 
         {/* Column 1 — Brand */}
-        <div>
+        <div className="sm:col-span-2 lg:col-span-1">
           <p style={{ fontSize: 22, fontWeight: 800, color: "#ffffff", margin: "0 0 10px", letterSpacing: "-0.02em" }}>
             Tinsights
           </p>
@@ -78,7 +95,7 @@ export default function Footer() {
           <div style={{ display: "flex", gap: 10 }}>
             {[
               {
-                href: "https://www.linkedin.com",
+                href: "https://www.linkedin.com/company/tinsights",
                 label: "LinkedIn",
                 svg: (
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" style={{ width: 18, height: 18 }}>
@@ -87,7 +104,7 @@ export default function Footer() {
                 ),
               },
               {
-                href: "https://www.instagram.com",
+                href: "https://www.instagram.com/tinsights.nl",
                 label: "Instagram",
                 svg: (
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" style={{ width: 18, height: 18 }}>
@@ -98,7 +115,7 @@ export default function Footer() {
                 ),
               },
               {
-                href: "https://github.com",
+                href: "https://github.com/tinsights",
                 label: "GitHub",
                 svg: (
                   <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: 18, height: 18 }}>
@@ -156,7 +173,50 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Column 3 — Navigatie */}
+        {/* Column 3 — Branches */}
+        <div>
+          <span style={LABEL_STYLE}>Branches</span>
+          {branches.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              style={LINK_STYLE}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#ffffff"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "#94a3b8"; }}
+            >
+              {l.label}
+            </Link>
+          ))}
+          <Link
+            href="/branches"
+            style={{ ...LINK_STYLE, color: "#818cf8", display: "inline-flex", alignItems: "center", gap: 5, marginTop: 4 }}
+            onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#a5b4fc"; }}
+            onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "#818cf8"; }}
+          >
+            Alle branches
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+            </svg>
+          </Link>
+        </div>
+
+        {/* Column 4 — Steden */}
+        <div>
+          <span style={LABEL_STYLE}>Steden</span>
+          {steden.map((l) => (
+            <Link
+              key={l.href}
+              href={l.href}
+              style={LINK_STYLE}
+              onMouseEnter={e => { (e.currentTarget as HTMLElement).style.color = "#ffffff"; }}
+              onMouseLeave={e => { (e.currentTarget as HTMLElement).style.color = "#94a3b8"; }}
+            >
+              {l.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Column 5 — Navigatie */}
         <div>
           <span style={LABEL_STYLE}>Navigatie</span>
           {navLinks.map((l) => (
@@ -172,14 +232,15 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Column 4 — Contact */}
+        {/* Column 6 — Contact */}
         <div>
           <span style={LABEL_STYLE}>Contact</span>
           {contactItems.map((item) => {
             const content = (
               <span style={{ display: "flex", alignItems: "flex-start", gap: 8, fontSize: 14, color: "inherit", padding: "4px 0" }}>
-                <i className={`bi ${item.icon}`} style={{ fontSize: 15, marginTop: 1, flexShrink: 0 }} aria-hidden />
-                {item.label}
+                <SiteIcon bootstrap={`bi ${item.icon}`} size={15} style={{ marginTop: 1, flexShrink: 0 }} />
+                {/* suppressHydrationWarning: Cloudflare Email Obfuscation mutates HTML vs React SSR */}
+                <span suppressHydrationWarning className="whitespace-nowrap">{item.label}</span>
               </span>
             );
             return item.href ? (
@@ -217,7 +278,9 @@ export default function Footer() {
           className="flex flex-col items-center gap-3 text-center sm:flex-row sm:justify-between sm:text-left"
           style={{ fontSize: 12, color: "#475569" }}
         >
-          <p style={{ margin: 0 }}>© {new Date().getFullYear()} Tinsights — All Rights Reserved</p>
+          <p style={{ margin: 0 }} suppressHydrationWarning>
+            © {new Date().getFullYear()} Tinsights — Alle rechten voorbehouden
+          </p>
           <p style={{ margin: 0 }}>Designed &amp; Developed by Tinsights</p>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap", justifyContent: "center" }}>
             {legalLinks.map((l, i) => (

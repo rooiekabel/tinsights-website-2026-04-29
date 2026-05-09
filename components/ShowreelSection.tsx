@@ -1,13 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 /**
  * Korte showreel / sfeervideo (tutorial.mp4) — professioneel ingelijst.
  */
 export default function ShowreelSection() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
+
+  useEffect(() => {
+    const target = sectionRef.current;
+    if (!target) return;
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          setShouldLoadVideo(true);
+          io.disconnect();
+        }
+      },
+      { rootMargin: "300px 0px" },
+    );
+
+    io.observe(target);
+    return () => io.disconnect();
+  }, []);
+
   return (
     <section
+      ref={sectionRef}
       className="relative mx-auto w-full max-w-7xl scroll-mt-20 px-4 py-16 sm:px-6 sm:py-24 lg:px-8"
       aria-labelledby="showreel-heading"
     >
@@ -36,11 +59,11 @@ export default function ShowreelSection() {
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-slate-900/30 to-transparent" aria-hidden />
         <video
           className="aspect-video w-full object-cover"
-          src="/assets/tutorial.mp4"
+          src={shouldLoadVideo ? "/assets/tutorial.mp4?v=20260506" : undefined}
           controls
           playsInline
-          preload="metadata"
-          poster="/assets/mockup-4.png"
+          preload="none"
+          poster="/_next/image?url=%2Fassets%2Fmockup-4-poster.webp&w=384&q=75"
         >
           Je browser ondersteunt geen video. Bekijk de site op een moderne browser.
         </video>
